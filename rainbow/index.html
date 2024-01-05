@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rainbow</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="outer-circle">
+            <div class="color" id="red"></div>
+            <div class="color" id="orange"></div>
+            <div class="color" id="yellow"></div>
+            <div class="color" id="green"></div>
+            <div class="color" id="lightblue"></div>
+            <div class="color" id="blue"></div>
+            <div class="color" id="violet"></div>
+            <div id="inner-circle">
+                <h1>Rainbow</h1>
+                <div class="display"></div>
+                <div id="switches">
+                    <div class="label">
+                        <div class="power">
+                            <input type="checkbox" id="power">
+                        </div>
+                        <p>Power</p>
+                    </div>
+                    <div class="label">
+                        <div class="start">
+                            <button type="button" id="start"></button>
+                        </div>
+                        <p>Start</p>
+                    </div>
+                    <div class="label">
+                        <div class="hard">
+                            <input type="checkbox" id="hard">
+                        </div>
+                        <p>Hard</p>
+                    </div>
+                </div>
+                <div class="label" id="difficulty">
+                    <div id="difficulty-slider">
+                        <input type="radio" name="difficulty" class="ten" id="ten">
+                        <input type="radio" name="difficulty" class="twenty" id="twenty">
+                        <input type="radio" name="difficulty" class="thirty" id="thirty">
+                    </div>
+                    <p>Difficulty</p>
+                </div>
+            </div>
+        </div>
+
+        <script scr="app.js"></script>
+    </body>
+</html>

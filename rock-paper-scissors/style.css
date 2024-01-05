@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2d2327;
+    background-color: #e0e0e0;
+}
+
+header {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    border-bottom: 5px solid #2d2327;
+}
+
+.score-board {
+    display: inline-block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 15%;
+    color: #e0e0e0;
+    background-color: #6689a1;
+    border: 5px solid #2d2327;
+    border-top: none;
+}
+
+.score-board p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#user-badge {
+    float: left;
+    border-bottom-right-radius: 20px;
+}
+
+#computer-badge {
+    float: right;
+    border-bottom-left-radius: 20px;
+}
+
+.game-field {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #6689a1;
+    border: 5px solid #2d2327;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.field {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    border: 10px solid #2d2327;
+    border-radius: 50%;
+}
+
+img {
+    height: 130px;
+    width: 130px;
+}
+
+.user-choices {
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    margin: 50px 10px 10px 10px;
+    padding: 25px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(0, 0, 0, 0.15);
+    border: 10px solid #e0e0e0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+.choice:active {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(0, 0, 0, 0.15),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(0.98);
+}
+
+/* Classes applied by JavaScript */
+
+.green-glow {
+    background-image: url(./images/face-smile-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: greenyellow;
+}
+
+.gray-glow {
+    background-image: url(./images/face-meh-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: gray;
+}
+
+.red-glow {
+    background-image: url(./images/face-frown-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: crimson;
+}
+
+.rock {
+    background-image: url(./images/hand-back-fist-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130px;
+}
+
+.paper {
+    background-image: url(./images/hand-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130px;
+}
+
+.scissors {
+    background-image: url(./images/hand-scissors-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130px;
+}
